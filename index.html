@@ -10,15 +10,26 @@
 </head>
 
 <body class="body">
-    <main class="main">
-        <h1>Input your marks and <br> see your grades.</h1>
-        <div class="input-area">
-            <input required type="text" class="input-box" id="bangla" placeholder="Bangla"> <br>
-            <input required type="text" class="input-box" id="english" placeholder="English"> <br>
-            <input required type="text" class="input-box" id="math" placeholder="Math"> <br>
-            <input required type="text" class="input-box" id="general-science" placeholder="General-science"> <br>
-            <button class="submit-btn">Submit</button>
+    <main class="container">
+        <div>
+            <div class="main">
+                <h1>Input your marks and <br> see your grades.</h1>
+                <div class="input-area">
+                    <input required type="text" class="input-box" id="bangla" placeholder="Bangla" /> <br>
+                    <input required type="text" class="input-box" id="english" placeholder="English" /> <br>
+                    <input required type="text" class="input-box" id="math" placeholder="Math" /> <br>
+                    <input required type="text" class="input-box" id="general-science" placeholder="General-science" />
+                    <br>
+                    <button type="button" onclick="button()" class="submit-btn" value="required">Submit</button>
+
+                </div>
+
+            </div>
+            <div class="showdata">
+                <p id="showdata"></p>
+            </div>
         </div>
+
     </main>
     <script src="./main.js"></script>
 </body>
