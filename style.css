@@ -1,5 +1,73 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* reusable component */
+:root {
+    --text-color: aliceblue;
+    --background: rgba(255, 255, 255, 0.22);
+}
+
+.body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0.2, 0, 0, 0.1) url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+
+    /* filter: brightness(50%); */
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    /* From https://css.glass */
+    background: var(--background);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid var(--background);
+
+
+}
+
+.main>h1 {
+    margin-right: 1.5rem;
+    color: var(--text-color);
+    filter: brightness(150%);
+}
+
+::placeholder {
+    color: var(--text-color);
+}
+
+.input-box {
+    width: 15rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding: .2rem .7rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    color: var(--text-color);
+    background: var(--background)
+}
+
+.submit-btn {
+    padding: .6rem 2rem;
+    background: var(--background);
+    border: none;
+    color: var(--text-color);
+    border-radius: 1rem;
+    font-weight: 600;
+    cursor: pointer;
 }
